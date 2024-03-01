@@ -269,7 +269,7 @@ func initSys() {
 				}
 				var need bool
 				var err error
-				if kz == "" || kz == "core" {
+				if kz == "" || kz == "utils" {
 					need, err = GitPull("")
 					if err != nil {
 						return "请使用以下命令手动升级：\n cd " + ExecPath + " && git stash && git pull && go build && ./" + pname

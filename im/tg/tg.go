@@ -419,7 +419,7 @@ func (sender *Sender) Reply(msgs ...interface{}) ([]string, error) {
 			}
 		}
 	case core.ImageUrl:
-		// rsp, err := httplib.Get(string(msg.(core.ImageUrl))).Response()
+		// rsp, err := httplib.Get(string(msg.(utils.ImageUrl))).Response()
 		// if err != nil {
 		// 	sender.Reply(err)
 		// 	return 0, nil
