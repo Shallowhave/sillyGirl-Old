@@ -43,6 +43,7 @@ func InitReplies() {
 	// Config.Replies = append([]Reply{appreciate}, Config.Replies...)
 	for _, v := range Config.Replies {
 		reply := v
+
 		var handler func(s Sender) interface{}
 		if reply.Type != "url" {
 			handler = func(s Sender) interface{} {
